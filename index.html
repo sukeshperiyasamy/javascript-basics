@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>my page</title>
+   <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+    
+<h1>LEARN JAVA SCRIPT</h1>
+<script >
+  // var initialization
+
+  /* var no1 =10;
+  var name = "sukesh";
+   var name1='subash';
+ */
+// alert (print the value using alert)
+ /* var no=[5,4,6,7,8,9,"sukesh","sangee"];
+no.push("hi");
+var.(no.)sort(),length(),reverse(),sort()
+alert(no.reverse()); */
+
+//loops
+
+// forloop
+/*for( i=10 ; i<50 ; i++){
+// console.log(i);
+ }
+
+// while
+var i1=10;
+ while(i1<18)
+ {console.log(i1);
+ i1++;}*/
+
+/*var no3=[10,5,4,6,7,8,9];
+no3.forEach(function(no4)
+{console.log(no4);});
+*/
+
+/*
+function sayHelloInFiveSeconds(name){
+    var prompt = "Hello, " + name + "!";
+    // Inner functions are put in the local scope by default, as if they were
+    // declared with `var`.
+    function inner(){
+        alert(prompt);
+    }
+    setTimeout(inner, 5000);
+    // setTimeout is asynchronous, so the sayHelloInFiveSeconds function will
+    // exit immediately, and setTimeout will call inner afterwards. However,
+    // because inner is "closed over" sayHelloInFiveSeconds, inner still has
+    // access to the `prompt` variable when it is finally called.
+}
+sayHelloInFiveSeconds("Adam");
+*/
+// conditions
+//if
+/*
+var b1=10;
+var b2=10;
+var b3=5;
+if(b1==b2&&b3==51){
+  console.log("true")
+
+}
+else{
+  console.log("false")
+}
+*/
+/*
+var color="green";
+switch(color){
+  case"red":console.log("i like red");
+  break;
+  case"blue":console.log("i like blue");
+  break;
+  case"orange":console.log("i like red");
+  break;
+  case"green":console.log("i like green");
+  break;
+  default:console.log("choose any");
+  break;
+}
+*/
+// object literals
+/*
+var person = {
+  fname : "sukesh",
+  lname : "P",
+ age : 25,
+ children: ["raj","ram"],
+//  embedded objest
+address:{
+  street: 2,
+  city:"chennai",
+  state:"TN",
+},
+}
+// console.log(person.fname+ " "+ person.lname)
+// console.log(person.address.state)
+console.log(person.children[0])
+*/
+// object constructors
+/*
+var animal= new Object();
+animal.name1="tiger";
+animal.type1="killer";
+animal.color1="yellow";
+
+animal.name="tiger1";
+animal.type="killer1";
+animal.color="yellow1";
+
+
+
+console.log(animal.type)
+*/
+
+
+function animal(name,type,color)
+{
+this.name=name;
+this.type=type;
+this.color=color;
+
+
+}
+
+var tiger=new animal("tiger","killer","orange")
+var rabbit=new animal("rabbit","soft","white")
+
+console.log(rabbit)
+
+
+
+
+
+</script>
+</body>
+</html>
